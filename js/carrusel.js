@@ -7,13 +7,11 @@ window.onload = function () {
         'img/bebidas.jpg',
         'img/pizza.jpg'
     ];
-    const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000;
+    const TIEMPO_INTERVALO_MILESIMAS_SEG = 2000;
     let posicionActual = 0;
     let $botonRetroceder = document.querySelector('#retroceder');
     let $botonAvanzar = document.querySelector('#avanzar');
-    let $imagen = document.querySelector('#imagen');
-    let $botonPlay = document.querySelector('#play');
-    let $botonStop = document.querySelector('#stop');
+    let $imagen = document.querySelector('#imagenes');
     let intervalo;
 
     // Funciones
@@ -57,8 +55,6 @@ window.onload = function () {
         // Desactivamos los botones de control
         $botonAvanzar.setAttribute('disabled', true);
         $botonRetroceder.setAttribute('disabled', true);
-        $botonPlay.setAttribute('disabled', true);
-        $botonStop.removeAttribute('disabled');
 
     }
 
@@ -77,8 +73,7 @@ window.onload = function () {
     // Eventos
     $botonAvanzar.addEventListener('click', pasarFoto);
     $botonRetroceder.addEventListener('click', retrocederFoto);
-    $botonPlay.addEventListener('click', playIntervalo);
-    $botonStop.addEventListener('click', stopIntervalo);
+
     // Iniciar
     renderizarImagen();
 } 
