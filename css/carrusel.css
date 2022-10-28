@@ -2,13 +2,13 @@
     max-width: 950px;
     margin: 0 auto;
     display: flex;
-    max-height: 1123px;
+    max-height: 1140px;
 }
 #imagenes {
     width: 100%;
-    height: 1123px;
+    height: 1140px;
     background-size: cover;
 }
 button img {
-    height: 58;
+    height: 60;
 }
