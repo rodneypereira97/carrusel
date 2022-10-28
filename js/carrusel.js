@@ -7,7 +7,7 @@ window.onload = function () {
         'img/bebidas.jpg',
         'img/pizza.jpg'
     ];
-    const TIEMPO_INTERVALO_MILESIMAS_SEG = 2000;
+    const TIEMPO_INTERVALO_MILESIMAS_SEG = 100;
     let posicionActual = 0;
     let $botonRetroceder = document.querySelector('#retroceder');
     let $botonAvanzar = document.querySelector('#avanzar');
